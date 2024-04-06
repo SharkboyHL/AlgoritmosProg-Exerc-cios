@@ -34,35 +34,35 @@ int main(){
     if(idade >= 18 && sabeLer == "sim" && sabeEscrever == "sim" && temCpf == "sim"){
         cout << "Você pode tirar a sua CNH !" << endl;
     }else if(idade < 18 && sabeLer == "sim" && sabeEscrever == "não" && temCpf == "não"){
-        cout << "Você não pode tirar a CNH por que você é menor de idade." << endl;
+        cout << "Você não pode tirar a CNH porque você é menor de idade." << endl;
     }else if(idade < 18 && sabeLer == "não" && sabeEscrever == "não" && temCpf == "sim"){
-        cout << "Você não pode tirar a CNH por que você é menor de idade, não sabe ler e não sabe escrever." << endl;
+        cout << "Você não pode tirar a CNH porque você é menor de idade, não sabe ler e não sabe escrever." << endl;
     }else if(idade < 18 && sabeLer == "não" && sabeEscrever == "sim" && temCpf == "não"){
-        cout << "Você não pode tirar a CNH por que você é menor de idade não sabe ler e não tem CPF." << endl;
+        cout << "Você não pode tirar a CNH porque você é menor de idade não sabe ler e não tem CPF." << endl;
     }else if(idade < 18 && sabeLer == "sim" && sabeEscrever == "não" && temCpf == "não"){
-        cout << "Você não pode tirar a CNH por que você é menor de idade, não sabe escrever e não tem CPF." << endl;
+        cout << "Você não pode tirar a CNH porque você é menor de idade, não sabe escrever e não tem CPF." << endl;
     }else if(idade < 18 && sabeLer == "não" && sabeEscrever == "sim" && temCpf == "sim"){
-        cout << "Você não pode tirar a CNH por que você é menor de idade e não sabe ler." << endl;
+        cout << "Você não pode tirar a CNH porque você é menor de idade e não sabe ler." << endl;
     }else if(idade < 18 && sabeLer == "sim" && sabeEscrever == "não" && temCpf == "sim"){
-        cout << "Você não pode tirar a CNH por que você é menor de idade e não sabe escrever." << endl;
+        cout << "Você não pode tirar a CNH porque você é menor de idade e não sabe escrever." << endl;
     }else if(idade < 18 && sabeLer == "sim" && sabeEscrever == "sim" && temCpf == "não"){
-        cout << "Você não pode tirar a CNH por que você é menor de idade e não tem CPF." << endl;
+        cout << "Você não pode tirar a CNH porque você é menor de idade e não tem CPF." << endl;
     }else if(idade >= 18 && sabeLer == "não" && sabeEscrever == "não" && temCpf == "não"){
-        cout << "Você não pode tirar a CNH por que você não sabe ler, não sabe escrever e não tem CPF." << endl;
+        cout << "Você não pode tirar a CNH porque você não sabe ler, não sabe escrever e não tem CPF." << endl;
     }else if (idade >= 18 && sabeLer == "sim" && sabeEscrever == "não" && temCpf == "não"){
-        cout << "Você não pode tirar a CNH por que você não sabe escrever e não tem CPF" << endl;
+        cout << "Você não pode tirar a CNH porque você não sabe escrever e não tem CPF" << endl;
     }else if(idade >= 18 && sabeLer == "não" && sabeEscrever == "sim" && temCpf == "não"){
-        cout << "Você não pode tirar a CNH por que você não sabe ler e não tem CPF." << endl;
+        cout << "Você não pode tirar a CNH porque você não sabe ler e não tem CPF." << endl;
     }else if(idade >= 18 && sabeLer == "não" && sabeEscrever == "não" && temCpf == "sim"){
-        cout << "Você não pode tirar a CNH por que você não sabe ler e escrever." << endl;
+        cout << "Você não pode tirar a CNH porque você não sabe ler e escrever." << endl;
     }else if(idade >= 18 && sabeLer == "não" && sabeEscrever == "sim" && temCpf == "sim"){
-        cout << "Você não pode tirar a CNH por que você não sabe ler." << endl;
+        cout << "Você não pode tirar a CNH porque você não sabe ler." << endl;
     }else if(idade >= 18 && sabeLer == "sim" && sabeEscrever == "não" && temCpf == "sim"){
-        cout << "Você não pode tirar a CNH por que você não sabe escrever." << endl;
+        cout << "Você não pode tirar a CNH porque você não sabe escrever." << endl;
     }else if(idade >= 18 && sabeLer == "sim" && sabeEscrever == "sim" && temCpf == "não"){
-        cout << "Você não pode tirar a CNH por que você não tem CPF." << endl;
+        cout << "Você não pode tirar a CNH porque você não tem CPF." << endl;
     }else{
-        cout << "Você não pode tirar a CNH por que você não se enquadra em nenhum dos requisitos !" << endl;
+        cout << "Você não pode tirar a CNH porque você não se enquadra em nenhum dos requisitos !" << endl;
     }
 
 
