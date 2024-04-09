@@ -34,11 +34,11 @@ int main(){
     cin >> placarB;
 
     if(placarA == placarB){
-        cout << "Final de jogo !! " << placarA << " a "  << placarB << endl;
-        cout << "Empate dos dois time que jogo pegado !" << endl;
+        cout << endl << "Final de jogo !! " << placarA << " a "  << placarB << endl;
+        cout << "Empate dos dois times que jogo pegado !" << endl;
     }else if(placarA > placarB){
-        cout << "Final de jogo !! " << placarA << " a "  << placarB << endl;
-        cout << "Grande vitória do time " << timeA << " sobre o " << timeB << endl;
+        cout << endl << "Final de jogo !! " << placarA << " a "  << placarB << endl;
+        cout << "Grande vitória do " << timeA << " sobre o " << timeB << endl;
     }else if(placarB > placarA){
         cout << endl << "Final de jogo !! " << placarA << " a "  << placarB << endl;
         cout << "Grande vitória do " << timeB << " sobre o " << timeA << endl;
