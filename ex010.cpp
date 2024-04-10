@@ -34,45 +34,49 @@ int main(){
     float precoPaoForma = 8.39;
     float precoLeite = 4.19;
     float precoPaoDoce = 5.79;
-    float precoSuspiro = 5.49;
-    float precoTotal;
+    float precoSuspiro = 5.49;    
 
     int pao;
     cout << endl << "Pães: ";
     cin >> pao;
 
     int queijo;
-    cout << endl << "Queijo: ";
+    cout << "Queijo: ";
     cin >> queijo;
 
     int bisnaga;
-    cout << endl << "Bisnaga: ";
+    cout << "Bisnaga: ";
     cin >> bisnaga;
 
     int paoForma;
-    cout << endl << "Pão de Forma: ";
+    cout << "Pão de Forma: ";
     cin >> paoForma;
 
     int leite;
-    cout << endl << "Leite: ";
+    cout << "Leite: ";
     cin >> leite;
 
     int paoDoce;
-    cout << endl << "Pão Doce: ";
+    cout << "Pão Doce: ";
     cin >> paoDoce;
 
     int suspiro;
-    cout << endl << "Suspiro: ";
+    cout << "Suspiro: ";
     cin >> suspiro;
 
+    float precoTotal = precoTotal = ((precoPao * pao) + (precoQueijo * queijo) + (precoBisnaga * bisnaga) + (precoPaoForma * paoForma) + (precoLeite * leite) + (precoPaoDoce * paoDoce) + (precoSuspiro * suspiro));
+
     if(bisnaga >= 1 || paoForma >= 1){
-        precoTotal = ((precoPao * pao) + (precoQueijo * queijo) + (precoBisnaga * bisnaga) + (precoPaoForma * paoForma) + (precoLeite * leite) + (precoPaoDoce * paoDoce) + (precoSuspiro * suspiro)) / 0.15;
+        precoTotal = precoTotal - (((precoPao * pao) + (precoQueijo * queijo) + (precoBisnaga * bisnaga) + (precoPaoForma * paoForma) + (precoLeite * leite) + (precoPaoDoce * paoDoce) + (precoSuspiro * suspiro)) * 0.15);
+        cout << precoTotal << endl;
     }else if(pao >= 10 && queijo >= 1){
-        precoTotal = ((precoPao * pao) + (precoQueijo * queijo) + (precoBisnaga * bisnaga) + (precoPaoForma * paoForma) + (precoLeite * leite) + (precoPaoDoce * paoDoce) + (precoSuspiro * suspiro)) / 0.10;
+        precoTotal = precoTotal - (((precoPao * pao) + (precoQueijo * queijo) + (precoBisnaga * bisnaga) + (precoPaoForma * paoForma) + (precoLeite * leite) + (precoPaoDoce * paoDoce) + (precoSuspiro * suspiro)) * 0.10);
+        cout << precoTotal << endl;
     }else if(leite >= 1 && paoDoce >= 1 || leite >= 1 && suspiro >= 1){
-        precoTotal = ((precoPao * pao) + (precoQueijo * queijo) + (precoBisnaga * bisnaga) + (precoPaoForma * paoForma) + (precoLeite * leite) + (precoPaoDoce * paoDoce) + (precoSuspiro * suspiro)) / 0.05;
+        precoTotal = precoTotal - (((precoPao * pao) + (precoQueijo * queijo) + (precoBisnaga * bisnaga) + (precoPaoForma * paoForma) + (precoLeite * leite) + (precoPaoDoce * paoDoce) + (precoSuspiro * suspiro)) * 0.05);
+        cout << precoTotal << endl;
     }else{
-        precoTotal = ((precoPao * pao) + (precoQueijo * queijo) + (precoBisnaga * bisnaga) + (precoPaoForma * paoForma) + (precoLeite * leite) + (precoPaoDoce * paoDoce) + (precoSuspiro * suspiro)); 
+        cout << precoTotal << endl;
     }
 
     return 0;
