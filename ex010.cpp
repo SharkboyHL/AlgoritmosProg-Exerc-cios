@@ -64,19 +64,19 @@ int main(){
     cout << "Suspiro: ";
     cin >> suspiro;
 
-    float precoTotal = precoTotal = ((precoPao * pao) + (precoQueijo * queijo) + (precoBisnaga * bisnaga) + (precoPaoForma * paoForma) + (precoLeite * leite) + (precoPaoDoce * paoDoce) + (precoSuspiro * suspiro));
+    float precoTotal = ((precoPao * pao) + (precoQueijo * queijo) + (precoBisnaga * bisnaga) + (precoPaoForma * paoForma) + (precoLeite * leite) + (precoPaoDoce * paoDoce) + (precoSuspiro * suspiro));
 
     if(bisnaga >= 1 || paoForma >= 1){
-        precoTotal = precoTotal - (((precoPao * pao) + (precoQueijo * queijo) + (precoBisnaga * bisnaga) + (precoPaoForma * paoForma) + (precoLeite * leite) + (precoPaoDoce * paoDoce) + (precoSuspiro * suspiro)) * 0.15);
-        cout << precoTotal << endl;
+        precoTotal = precoTotal - (precoTotal * 0.15);
+        cout << endl << "A promoção de 15'%' foi aplicada. Sua compra ficou no total R$" << precoTotal << endl;
     }else if(pao >= 10 && queijo >= 1){
-        precoTotal = precoTotal - (((precoPao * pao) + (precoQueijo * queijo) + (precoBisnaga * bisnaga) + (precoPaoForma * paoForma) + (precoLeite * leite) + (precoPaoDoce * paoDoce) + (precoSuspiro * suspiro)) * 0.10);
-        cout << precoTotal << endl;
+        precoTotal = precoTotal - (precoTotal * 0.10);
+        cout << endl << "A promoção de 10'%' foi aplicada. Sua compra ficou no total R$" << precoTotal << endl;
     }else if(leite >= 1 && paoDoce >= 1 || leite >= 1 && suspiro >= 1){
-        precoTotal = precoTotal - (((precoPao * pao) + (precoQueijo * queijo) + (precoBisnaga * bisnaga) + (precoPaoForma * paoForma) + (precoLeite * leite) + (precoPaoDoce * paoDoce) + (precoSuspiro * suspiro)) * 0.05);
-        cout << precoTotal << endl;
+        precoTotal = precoTotal - (precoTotal * 0.05);
+        cout << endl << "A promoção de 5'%' foi aplicada. Sua compra ficou no total R$" << precoTotal << endl;
     }else{
-        cout << precoTotal << endl;
+        cout << endl << "Sem descontos aplicados! Valor total da compra R$" << precoTotal << endl;
     }
 
     return 0;
