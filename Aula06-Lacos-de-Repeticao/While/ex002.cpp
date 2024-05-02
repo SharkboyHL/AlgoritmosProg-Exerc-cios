@@ -10,7 +10,7 @@ using namespace std;
 int main(){
 
     cout << "Bem vindo ao Supermercado Univali !" << endl;
-    cout << "Insira a quantidade de produtos que deseja comprar..."
+    cout << "Insira a quantidade de produtos que deseja comprar..."/
 
     return 0;
 }
